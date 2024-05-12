@@ -5,217 +5,187 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 <body>
-    <div class="container">
-    <header>
-        <div class="top">
-            <div class="top-left">
-                <img src="icons/search_FILL0_wght400_GRAD0_opsz24.png" alt="" id="search-icon">
-                <input type="search" id="header-search">
+        <nav>
+            <div id="nav-top">
+                <i id="nav-i"><img src="logos/reshot-icon-square-S3RGTA8EF5.svg" alt="" id="nav-img"></i>
+                <h3 id="nav-title">Dashboard</h3>
+            </div>
+        
+        
+           <ul id="nav-list">
+                <li><img src="nav-logos/reshot-icon-home-G4U8ZVKCDQ.svg" alt="" class="list-img">Home</li>
+                <li><img src="nav-logos/reshot-icon-profile-8F275WUJPN.svg" alt="" class="list-img">Profile</li>
+                <li><img src="nav-logos/reshot-icon-message-6287FEYTD9.svg" alt="" class="list-img">Messages</li>
+                <li><img src="nav-logos/reshot-icon-clock-face-ULEZS2V6NT.svg" alt="" class="list-img">History</li>
+                <li><img src="nav-logos/reshot-icon-tasks-6ZYF8CTMPS.svg" alt="" class="list-img">Tasks</li>
+                <li><img src="nav-logos/reshot-icon-community-work-62LHA9YNVT (1).svg" alt="" class="list-img">Communities</li>
+                <li></li>
+                <li><img src="nav-logos/reshot-icon-settings-cog-7QGXDSVBCR.svg" alt="" class="list-img" id="settings-img">Settings</li>
+                <li><img src="nav-logos/reshot-icon-24-hours-support-WKBPMCV4SQ.svg" alt="" class="list-img">Support</li>
+                <li><img src="nav-logos/reshot-icon-safe-check-CNVS2TW84A.svg" alt="" class="list-img">Privacy</li>
+            </ul>
+        </nav>
+
+        <header>
+            <div id="header-1">
+                <div id="search-container">
+                    <label for="search"><img src="logos/reshot-icon-search-V9365X7FSG.svg" alt="" id="search-icon"></label>
+                    <input type="search" id="search">
+                </div>
+
+                <div id="name">
+                    <div id="bell"><img src="logos/reshot-icon-packard-bell-XTHSKQZ6N2.svg" alt="" class="header-icon"></div>
+                    <div id="pic"><img src="logos/reshot-icon-cat-KZ29VWRPCX.svg" alt="" id="header-pic"></div>
+                    <p>Moragen Oakley</p>
+                </div>
             </div>
 
-            <div class="top-right">
-                <img src="icons/notifications_active_FILL0_wght400_GRAD0_opsz24.png" alt="" id="not-icon">
-                <img src="icons/kitty.png" alt="" id="cat-icon">
-                <p id="header-txt1">Morgan Oakley</p>
-            </div>
-        </div>
+            <div id="header-2">
+                    <div id="profile">
+                         <div id="profile-pic"><img src="logos/reshot-icon-cat-KZ29VWRPCX.svg" alt="" id="profile-picture"></div>
 
-        <div class="bottom">
-            <div class="bottom-left">
-                <img src="icons/kitty.png" alt="" id="cat-icon">
-                    <div class="bottom-txt">
-                        <p id="header-txt2">Hi there,</p>
-                        <p id="header-txt3">Morgan Oakley(@morgan)</p>
+                         <div id="profile-txt">
+                            <p id="great">Hi there,</p>
+                            <p id="profile-name">Morgan Oakley (@morgan)</p>
+                         </div>
+                    </div>
+
+                    <div id="buttons">
+                        <button class="btn">New</button>
+                        <button class="btn">Upload</button>
+                        <button class="btn">Share</button>
                     </div>
             </div>
+        </header>
 
-            <div class="bottom-right">
-                <button class="header-btn">New</button>
-                <button class="header-btn">Upload</button>
-                <button class="header-btn">Share</button>
-            </div>
-        </div>    
-    </header>
-
-    <nav>
-        <div class="nav-top">
-            <img src="icons/coding.png" alt="" width="50px">
-            <h2>Dashboard</h2>
-        </div>
-
-        <ul>
-            <li>Home</li>
-            <li>Profile</li>
-            <li>Message</li>
-            <li>History</li>
-            <li>Tasks</li>
-            <li>Communities</li>
-            <br>
-            <li>Settings</li>
-            <li>Support</li>
-            <li>Privacy</li>
-        </ul>
-    </nav>
-
-    <main>
-        <div class="main-container">
-            <div class="content-main">
-                <p>Your Projects</p>
-
-                <div class="content-box" id="box1">
-                    <p class="box-title">Super Cool Project</p>
-                    <p class="box-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit doloremque libero tempore illo. Delectus, repellat!</p>
-
-                    <div class="icon-wrap">
-                        <i></i>
-                        <i></i>
-                        <i></i>
-                    </div>
+        <main>
+          <div id="main-box">
+            <h3 id="main-title-one">Your Projects</h3>
+            
+            <div class="box">
+                <div class="box-txt">
+                  <p class="main-box-title">Super Cool Project</p>
+                  <p class="main-box-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est neque officiis in culpa eius illum.</p>
                 </div>
-
-                <div class="content-box" id="box2">
-                    <p class="box-title">Less Cool Project</p>
-                    <p class="box-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse porro praesentium dignissimos sequi quaerat accusantium minima optio quos incidunt illo!</p>
-
-                    <div class="icon-wrap">
-                        <i></i>
-                        <i></i>
-                        <i></i>
-                    </div>
-                </div>
-
-                <div class="content-box" id="box3">
-                    <p class="box-title">Impossible App</p>
-                    <p class="box-txt">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor aliquid soluta fugit accusamus officia?</p>
-
-                    <div class="icon-wrap">
-                        <i></i>
-                        <i></i>
-                        <i></i>
-                    </div>
+                
+                <div class="box-btn">
 
                 </div>
-                <div class="content-box" id="box4">
-                    <p class="box-title">Easy Peasy App</p>
-                    <p class="box-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus ipsa sequi cupiditate quia eligendi eius nobis itaque. Est, nemo rerum.</p>
-
-                    <div class="icon-wrap">
-                        <i></i>
-                        <i></i>
-                        <i></i>
-                    </div>
-                </div>
-
-                <div class="content-box" id="box5">
-                    <p class="box-title">Ad Blocker</p>
-                    <p class="box-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat nesciunt incidunt, eius rerum quibusdam pariatur molestias?</p>
-
-                    <div class="icon-wrap">
-                        <i></i>
-                        <i></i>
-                        <i></i>
-                    </div>
-                </div>
-
-                <div class="content-box" id="box6">
-                    <p class="box-title">Money Maker</p>
-                    <p class="box-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore accusamus, quo deleniti molestias natus suscipit quisquam rem corrupti. Ipsam autem reiciendis corrupti.</p>
-
-                    <div class="icon-wrap">
-                        <i></i>
-                        <i></i>
-                        <i></i>
-                    </div>
-                </div>
-             
             </div>
 
-            <div class="content-main-aside">
-                <div class="aside-top">
-                    
-                    <p>Annoucments</p>
+            <div class="box">
+                <div class="box-txt">
+                  <p class="main-box-title">Less Cool Project</p>
+                  <p class="main-box-txt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam laudantium culpa, vel sunt ratione temporibus enim sequi consectetur doloremque accusamus repellat illum esse inventore aut tempora. </p>
+                </div>
 
-                    <div id="Annoucments">
-                        <p class="title-aside-top">
-    
-                        </p>
-    
-                        <p class="aside-txt">
-                            
-                        </p>
-    
-                        <p class="title-aside-top">
-    
-                        </p>
-    
-                        <p class="aside-txt">
-    
-                        </p>
+                <div class="box-btn">
+
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="box-txt">
+                  <p class="main-box-title">Impossible App</p>
+                  <p class="main-box-txt">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt veritatis maxime explicabo ab quidem!</p>
+                </div>
+
+                <div class="box-btn">
+
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="box-txt">
+                  <p class="main-box-title">Easy Peasy App</p>
+                  <p class="main-box-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, cum? Ducimus rerum perspiciatis quos illo vero nesciunt quaerat sapiente corporis.</p>
+                </div>
+
+                <div class="box-btn">
+
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="box-txt">
+                  <p class="main-box-title">Ad Blocker</p>
+                  <p class="main-box-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis enim inventore eveniet pariatur a libero veritatis voluptate animi blanditiis optio!</p> 
+                </div>
+
+                <div class="box-btn">
+
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="box-txt">
+                  <p class="main-box-title">Money Maker</p>
+                  <p class="main-box-txt">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, dolorem, modi nam natus ullam voluptas accusamus recusandae aspernatur omnis dolorum sint minima?</p>
+                </div>
+
+                <div class="box-btn">
+
+                </div>
+            </div>
+          </div>
+
+          <div id="side-box">
+                <div id="side-top">
+                    <h3 id="main-title-two">Annoucements</h3>
+
+                    <div id="side-box-one">
+
+                        <div id="txt-one">
+                            <p class="txt-title">Site Maintenance</p>
+
+                            <p class="txt-p">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut voluptatibus perferendis in adipisci?</p>
+                        </div>
+
+                        <div id="txt-two">
+                            <p class="txt-title">Community Share Day</p>
+
+                            <p class="txt-p">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores laborum explicabo optio fugiat.</p>
+                        </div>
+
+                        <div id="txt-three">
+                            <p class="txt-title">Update Privacy Policy</p>
                         
-                        <p class="title-aside-top">
-    
-                        </p>
-    
-                        <p class="aside-txt">
-    
-                        </p>
+                            <p class="txt-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas in soluta optio odio cum aliquam.</p>
+                        </div>
+
                     </div>
                 </div>
 
-                <div class="aside-bottom">
-                    <p>Trending</p>
+                <div id="side-bottom">
+                    <h3 id="main-title-three">Trending</h3>
 
-                    <div class="asside-bottom1">
-                        <div class="aside-bottom-icon">
-                             <i></i>
-                        </div>      
-
-                        <div class="text-wrap">
+                    <div id="side-box-bottom">
+                        <div>
                             <p>@tegan</p>
-                            <p>World peace builder</p>
+                            <p>World Peace Builder</p>
                         </div>
-                    </div>
-
-                    <div class="asside-bottom2">
-                        <div class="aside-bottom-icon">
-                            <i></i>
-                        </div>
-
-                        <div class="text-wrap">
+                        
+                        <div>
                             <p>@morgan</p>
-                            <p>Super cool project</p>
+                            <p>Super Cool Project</p>
                         </div>
-                    </div>
-
-                    <div class="asside-bottom3">
-                        <div class="aside-bottom-icon">
-                            <i></i>
-                        </div>
-
-                        <div class="text-wrap">
+                        
+                        <div>
                             <p>@kendall</p>
                             <p>Life Changing App</p>
                         </div>
-                    </div>
-
-                    <div class="asside-bottom4">
-                        <div class="aside-bottom-icon">
-                            <i></i>
-                        </div>
-
-                        <div class="text-wrap">
+                        
+                        <div>
                             <p>@alex</p>
                             <p>No Traffic Maker</p>
                         </div>
                     </div>
                 </div>
+          
             </div>
-        </div>
-    </main>
-
-</div>
+       </main>
+   
 </body>
 </html>

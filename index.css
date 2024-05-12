@@ -1,174 +1,167 @@
-* {
-   padding: 0;
-   margin: 0;
-}
-
 body {
-    height: 100%;
-    font-family: sans-serif;
-    overflow-x: hidden;
-    display: grid;
-    justify-self: center;
-}
-
-.container {
-    height: 100vh;
     width: 100%;
+    height: 100vh;
     display: grid;
-    grid-template-columns: auto, 1fr;
-    grid-template-rows: auto, 1fr;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 5fr;
 }
 
-header {
-    grid-column: 2;
-    grid-row: 0 / 1 ;
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-header {
-    padding: 10px;
-    grid-template-columns: 100% ;
-    grid-template-rows:50%, 50%;
-}
-
-.top {
-    grid-row: 1;
-    grid-column: 1;
-    display: flex;
-    padding: 10px;
-    align-items: center;
-}
-
-.top-left {
-    width: 70%;
-    display: flex;
-}
-
-#search-icon {
-    margin-right: 10px;
-    width: 3%;
-}
-
-#header-search {
-    width: 90%;
-    border-radius: 30px;
-    background-color: lightgrey;
-    border: none;
-    padding: 10px;
-}
-
-.top-right {
-    width: 30%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    
-}
-
-#header-txt1 {
-    font-weight: bold;
-    font-size: 1.5em;
-}
-
-#cat-icon {
-    width: 10%;
-}
-
-#not-icon {
-    width: 8%;
-}
-
-.bottom {
-    grid-row: 2;
-    grid-column: 1;
-    display: flex;
-    justify-content: space-around;
-}
-
-.bottom-left {
-    display:flex;
-    align-items: center;
-    
-}
-
-.bottom-txt {
-    font-weight: bold;
-    padding: 20px;
-}
-
-#header-txt2 {
-    font-weight: bold;
-}
-
-#header-txt3 {
-    font-weight: bold;
-    font-size: 1.5em;
-}
-
-.bottom-right {
-    display: flex;
-    align-self: center;
-    justify-content: space-between;
-    width: 30%;
-}
-
-.header-btn {
-    padding: 20px;
-    font-size: 1em;
-    font-weight: bold;
-    border-radius: 30px;
-    width: 100px;
-}
+/* NAV BAR */
 
 nav {
-    grid-column: 1 ;
-    grid-row: 1 / 5;
-    padding: 10px;
-}
-
-.nav-top > h2 {
-    font-size: 30px;
-    align-self: center;
-    
-}
-
-.nav-top {
+    border: 1px solid black;
+    grid-row: 1 / 4;
     display: flex;
-    padding: 20px;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 10px;
+    background-color: dodgerblue;
+    color: white;
+
+}
+
+#nav-top {
+    display: flex;
+}
+
+#nav-title {
+    font-size: 2.1rem;
+}
+
+#nav-img {
+    width: 2.4rem;
+}
+
+.list-img {
+    width: 1.5rem;
 }
 
 li {
-    padding: 20px;
-    font-size: 20px;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 20px;
     font-weight: bold;
 }
 
 
-#icon {
-    width: 100px;
-}
+/* HEADER */
 
-
-main {
-    grid-column: 2;
-    grid-row: 2 / 5;
+header {
     border: 1px solid black;
-}
-
-.main-container {
+    grid-column: 2 / 3;
     display: grid;
-    grid-template-columns: 60%, 40%;
-    grid-template-rows:100%, 100% ;
+    grid-template-rows: 1fr 1fr;
+}
+
+/* HEADER 1 */
+
+#header-1 {
+    grid-row: 1;
+    display: flex;
+}
+
+#search-container {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#search {
+    width: 80%;
+    border-radius: 20px;
+    border: none;
+    background-color: lightgray;
+    padding: 10px;
+}
+
+#search-icon {
+    width: 2rem;
+}
+
+#name {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 30px;
+    width: 40%;
+}
+
+#name > p {
+    font-weight: bolder;
+    font-size: larger;
+}
+
+
+/* HEADER 2 */
+
+#header-2 {
+    grid-row: 2;
+    display: flex;
+}
+
+#profile {
+    width: 50%;
+    display: flex;
+    align-items: center;
     padding: 20px;
+    gap: 20px;
+    margin-left: 50px;
 }
 
-.content-main {
-    grid-column: 1 / 2 ;
-    grid-row: 1 / 2;
+.header-icon {
+    width: 2em;
 }
 
-.content-main-aside {
-    grid-column: 2;
-    grid-row: 1 / 3;
+#header-pic {
+    width: 3em;
 }
 
+#profile-picture {
+    width: 5em;
+}
 
+#profile-txt {
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#profile-name {
+    font-size: 1.3rem;
+}
+
+#buttons {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.btn {
+    padding: 20px;
+    border-radius: 20px;
+    border: none;
+    width: 18%;
+    background-color: dodgerblue;
+    color: white;
+    font-weight: bolder;
+    font-size: 1.2em;
+
+}
+/* MAIN */
+
+
+ 
