@@ -178,7 +178,6 @@ main {
 }
 
 #box-container {
-    
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
@@ -187,40 +186,50 @@ main {
 
 .box {
     border-radius: 10px;
-    width: 400px;
+    width: 45%;
     height: 200px;
     padding: 10px;
     border-left: 10px solid rgb(225, 154, 22);
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .main-box-title {
     font-weight: bolder;
 }
 
+.box-btn {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.box-img-main {
+    width: 3em;
+    height: 3em;
+    object-fit: cover;
+}
+
 /* SIDE BOX */
 
+
+
 #side-box {
-    border: 1px solid darkred;
     display: flex;
     flex-direction: column;
     padding: 20px;
     justify-content: space-between;
+ 
 }
 
-.box-txt {
-    border: 1px solid red;
-}
 
-.box-btn {
-    border: 1px solid blue;
-}
 
 /* BOX TOP */
 
-#main-title-two {
-    border: 1px solid black;
-}
+
 
 #side-top {
     display: flex;
@@ -229,17 +238,15 @@ main {
     height: 45%;
 }
 
-#side-box-one {
-    border: 1px solid red;
-}
+
 
 #top-box-container {
     padding: 20px;
     background-color: white;
     height: 100%;
     border: 20px;
-    border: 1px solid black;
     padding: 35px;
+    border-radius: 20px;
 }
 
 .txt-title {
@@ -268,12 +275,9 @@ main {
 
 /* SIDE BOTTOM BOX */
 
-#main-title-three {
-    border: 1px solid black;
-}
+
 
 #side-bottom {
-    border: 1px solid green;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -292,11 +296,34 @@ main {
 }
  
 #side-box-bottom {
-    border: 1px solid red;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .boxes-bottom {
-    border: 1px solid black;
     width: 100%;
-    
+    display: flex;
+    gap: 20px;
+}
+
+.tag-container {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5em;
+    width: 100%;
+    justify-content: flex-start;
+}
+
+.logo-bottom {
+    width: 10%;
+}
+
+.bottomt-tag {
+    font-weight: bolder;
+}
+
+.tag-txt {
+    color: gray;
 }
